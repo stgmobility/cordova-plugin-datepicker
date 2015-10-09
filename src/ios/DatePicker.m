@@ -188,6 +188,7 @@
   UIPopoverController *popover = [[UIPopoverController alloc] initWithContentViewController:datePickerViewController];
   popover.delegate = self;
   [popover setPopoverContentSize:CGSizeMake(pickerViewWidth, pickerViewHeight) animated:NO];
+  popover.backgroundColor = [UIColor whiteColor];
   
   CGFloat x = [[options objectForKey:@"x"] intValue];
   CGFloat y = [[options objectForKey:@"y"] intValue];
