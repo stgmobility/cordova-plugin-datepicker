@@ -84,16 +84,14 @@ DatePicker.prototype.show = function(options, cb) {
         allowFutureDates: true,
         minDate: '',
         maxDate: '',
-        doneButtonLabel: 'Done',
+        doneButtonLabel: Jda.getMessage('jda.mobility.dialog.done'),
         doneButtonColor: '#007AFF',
-        cancelButtonLabel: 'Cancel',
+        cancelButtonLabel: Jda.getMessage('jda.mobility.dialog.cancel'),
         cancelButtonColor: '#007AFF',
-        locale: "NL",
         x: '0',
         y: '0',
         minuteInterval: 1,
-        popoverArrowDirection: this._popoverArrowDirectionIntegerFromString("any"),
-        locale: "en_US"
+        popoverArrowDirection: this._popoverArrowDirectionIntegerFromString("any")
     };
 
     for (var key in defaults) {
